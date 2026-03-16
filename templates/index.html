@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <title>Мой проект</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Привет! Это мой проект для практики.</h1>
-    <p>Это приложение работает на Python и Flask.</p>
+    <div class="box">
+        {% if name %}
+            <h1>Привет, {{ name }}! 👋</h1>
+            <p>Рад тебя видеть в моем проекте.</p>
+            <br>
+            <a href="/">Назад</a>
+        {% else %}
+            <h1>Добро пожаловать!</h1>
+            <form method="post">
+                <input type="text" name="user_name" placeholder="Введи свое имя..." required>
+                <br>
+                <button type="submit">Поздороваться</button>
+            </form>
+        {% endif %}
+    </div>
 </body>
 </html>

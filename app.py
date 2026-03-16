@@ -1,10 +1,14 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return render_template('index.html', title="Мой проект на Flask")
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    name = ""
+    if request.method == 'POST':
+        name = request.form.get('user_name')
+    
+    return render_template('index.html', name=name)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
