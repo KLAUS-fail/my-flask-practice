@@ -16,7 +16,7 @@ def index():
 
 @app.route('/clear')
 def clear_session():
-    """Та самая очистка для отчета ПМ.04"""
+    """Та самая очистка"""
     session.clear()
     return redirect(url_for('index'))
 
