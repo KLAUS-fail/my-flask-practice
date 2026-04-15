@@ -2,24 +2,27 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Мой проект</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система управления</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="box">
-        {% if name %}
-            <h1>Привет, {{ name }}! 👋</h1>
-            <p>Рад тебя видеть в моем проекте.</p>
-            <br>
-            <a href="/">Назад</a>
-        {% else %}
-            <h1>Добро пожаловать!</h1>
-            <form method="post">
-                <input type="text" name="user_name" placeholder="Введи свое имя..." required>
-                <br>
-                <button type="submit">Поздороваться</button>
-            </form>
-        {% endif %}
+    <div class="container">
+        <div class="card">
+            {% if name %}
+                <div class="success-icon">✓</div>
+                <h1>Сессия активна</h1>
+                <p>Добро пожаловать, <strong>{{ name }}</strong></p>
+                <a href="{{ url_for('clear_session') }}" class="btn-clear">Очистить данные сессии</a>
+            {% else %}
+                <h1>Авторизация</h1>
+                <p>Введите данные для записи в систему</p>
+                <form method="post">
+                    <input type="text" name="user_name" placeholder="Имя пользователя" required>
+                    <button type="submit" class="btn-submit">Войти</button>
+                </form>
+            {% endif %}
+        </div>
     </div>
 </body>
 </html>

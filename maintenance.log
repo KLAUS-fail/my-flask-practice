@@ -1,0 +1,26 @@
+2026-04-15 13:25:47,975 - WARNING -  * Debugger is active!
+2026-04-15 13:25:47,976 - INFO -  * Debugger PIN: 310-639-302
+2026-04-15 13:25:52,202 - INFO -  * Detected change in '/workspaces/my-flask-practice/app.py', reloading
+2026-04-15 13:25:52,385 - WARNING -  * Debugger is active!
+2026-04-15 13:25:52,385 - INFO -  * Debugger PIN: 310-639-302
+2026-04-15 13:25:55,706 - INFO -  * Detected change in '/workspaces/my-flask-practice/app.py', reloading
+2026-04-15 13:25:55,907 - WARNING -  * Debugger is active!
+2026-04-15 13:25:55,908 - INFO -  * Debugger PIN: 310-639-302
+2026-04-15 13:26:01,232 - INFO -  * Detected change in '/workspaces/my-flask-practice/app.py', reloading
+2026-04-15 13:26:01,416 - WARNING -  * Debugger is active!
+2026-04-15 13:26:01,416 - INFO -  * Debugger PIN: 310-639-302
+2026-04-15 13:27:17,727 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.14.31:5000
+2026-04-15 13:27:17,728 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-15 13:27:17,728 - INFO -  * Restarting with stat
+2026-04-15 13:27:17,878 - WARNING -  * Debugger is active!
+2026-04-15 13:27:17,878 - INFO -  * Debugger PIN: 310-639-302
+2026-04-15 13:27:20,621 - INFO - 127.0.0.1 - - [15/Apr/2026 13:27:20] "GET / HTTP/1.1" 200 -
+2026-04-15 13:27:20,953 - INFO - 127.0.0.1 - - [15/Apr/2026 13:27:20] "GET /static/style.css HTTP/1.1" 200 -
+2026-04-15 13:27:27,444 - INFO - Инициализация сессии: тото
+2026-04-15 13:27:27,445 - INFO - 127.0.0.1 - - [15/Apr/2026 13:27:27] "POST / HTTP/1.1" 200 -
+2026-04-15 13:27:27,850 - INFO - 127.0.0.1 - - [15/Apr/2026 13:27:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-15 13:30:27,453 - INFO -  * Detected change in '/workspaces/my-flask-practice/app.py', reloading
+2026-04-15 13:30:27,480 - INFO -  * Restarting with stat
